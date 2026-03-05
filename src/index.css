@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zinc-900: #18181b;
+  --color-zinc-500: #71717a;
+  --color-zinc-400: #a1a1aa;
+  --color-zinc-200: #e4e4e7;
+  --color-zinc-100: #f4f4f5;
+  --color-zinc-50: #fafafa;
+}
+
+@layer base {
+  :root {
+    --bg-primary: #ffffff;
+    --text-primary: #18181b;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    background-image: url('/bg-paper.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: var(--text-primary);
+    font-feature-settings: "rlig" 1, "calt" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    min-height: 100vh;
+  }
+}
